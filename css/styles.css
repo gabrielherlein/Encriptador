@@ -1,0 +1,344 @@
+*{
+    background-color: #F3F5FC;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo{
+    margin-top: 20px;
+    width: 10%;
+}
+
+main{
+    display: flex;
+    margin: 50px 2% 50px 10%;
+}
+
+.campo-texto{
+    width: 100%;
+}
+
+.texto{
+    color: #0A3871;
+    border: none;
+    outline: none;
+    resize: none;
+    text-transform: lowercase;
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 25px;
+}
+
+::placeholder{
+    color: #0A3871;
+    text-transform: none;
+    opacity: 60%;
+}
+
+.campo-resultado{
+    width: 50%;
+}
+
+.resultado{
+    background-color: white;
+    background-image: url("../images/Munheco.svg");
+    background-position-x: center;
+    background-position-y: 120px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    resize: none;
+    color: #495057;
+    box-sizing: border-box;
+    margin-top: -120px;
+    padding: 15px 25px;
+    padding-bottom: 160px;
+    width: 100%;
+    height: 798px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.advertencia{
+    color: #495057;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.vector{
+   width: 15px;
+}
+
+.botones{
+    display: flex;
+}
+
+.boton-encriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    width: 50%;
+    height: 60px;
+    margin-right: 25px;
+    transition: 0.4s;
+}
+
+.boton-encriptar:hover{
+    opacity: 85%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+}
+
+.boton-desencriptar{
+    background-color:#D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    color: #0A3871;
+    cursor: pointer;
+    font-size: 18px;
+    width: 50%;
+    height: 60px;
+    margin-right: 25px;
+    transition: 0.4s;
+}
+
+.boton-desencriptar:hover{
+    opacity: 75%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+}
+
+
+.boton-borrar{
+    background-color: white;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    color: #0A3871;
+    cursor: pointer;
+    font-size: 18px;
+    width: 50%;
+    height: 60px;
+    margin-right: 25px;
+    transition: 0.4s;
+}
+
+.boton-borrar:hover{
+    opacity: 75%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+}
+
+.boton-borrar{
+    display: none;
+}
+
+.descripcion{
+    margin-top: -320px;
+}
+
+.descripcion-mensaje{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    width: 336px;
+    height: 58px;
+    margin: 20px auto;
+    text-align: center;
+    color: #343A40;
+}
+
+.descripcion-ingresar{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    width: 336px;
+    height: 48px;
+    margin: 20px auto;
+    text-align: center;
+    color: #495057;
+}
+
+.copiar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -170px;
+}
+
+.copiar{
+    display: none;
+}
+
+.boton-copiar{
+    background-color: #F3F5FC;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    color: #0A3871;
+    cursor: pointer;
+    font-size: 18px;
+    width: 60%;
+    height: 60px;
+    transition: 0.4s;
+}
+
+.boton-copiar:hover{
+    opacity: 75%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+}
+
+.check{
+    background-color: white;
+    border: none;
+    outline: none;
+    width: 60%;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0A3871;
+    opacity: 75%;
+}
+
+.copy{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+@media all and (max-width: 768px){
+    .logo{
+        width: 15%;
+        margin-top: 40px;
+    }
+    
+    main{
+        display: block;
+        margin: 50px;
+    }
+
+    .texto{
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .campo-resultado{
+        width: 100%;
+    }
+
+    .resultado{
+        box-sizing: border-box;
+        width: 100%;
+        height: 200px;
+        margin-top: 50px;
+        padding-bottom: 120px;
+        background-image: none;
+    }
+
+    .descripcion{
+        margin-top: -150px;
+    }
+
+    .descripcion-mensaje, .descripcion-ingresar{
+        width: 100%;
+        height: 50px;
+        margin: 0px;
+    }
+
+    .copiar{
+        margin-top: -130px;
+    }
+
+    .boton-copiar{
+        width: 95%;
+    }
+
+    .boton-encriptar{
+        margin-right: 10px;
+        width: 50%;
+    }
+
+    .boton-desencriptar{
+        margin-left: 10px;
+        margin-right: 0px;
+        width: 50%;
+    }
+
+    .boton-borrar{
+        margin-left: 20px;
+        margin-right: 0px;
+        width: 50%;
+    }
+
+    .copy{
+        margin-top: 100px;
+    }
+}
+
+@media all and (max-width: 375px){
+    .logo{
+        width: 30%;
+        margin: 10px 0px 0px -30px;
+    }
+
+    main{
+        margin: 60px 10px;
+    }
+
+    .texto{
+        height: 350px;
+    }
+
+    .advertencia{
+        font-size: 14px;
+    }
+
+    .vector{
+        width: 12px;
+    }
+
+    .botones{
+        flex-direction: column;
+    }
+
+    .boton-encriptar{
+        margin: 15px 0px;
+        width: 100%;
+    }
+    
+    .boton-desencriptar{
+        margin: 0px;
+        width: 100%;
+    }
+
+    .boton-borrar{
+        margin: 15px 0px;
+        width: 100%;
+    }
+
+    .descripcion{
+        margin-top: -180px;
+    }
+
+    .descripcion-mensaje{
+        margin-bottom: 10px;
+    }
+
+    .descripcion-ingresar{
+        margin-top: 30px;
+    }
+
+    .boton-copiar{
+        width: 85%;
+    }
+
+    .copy{
+        font-size: 11px;
+    }
+}
